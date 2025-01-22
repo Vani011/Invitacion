@@ -59,3 +59,86 @@ a:hover {
     color: #01a839cd;
     font-weight: bold;
 }
+
+/* Sección del home */
+.home{
+    position: relative;
+    z-index: 1;  
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../imagenes/home.jpg); /* Ruta de la imagen */
+    background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    
+    
+  }
+  .home::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.327)
+  }
+  .home h1{
+    color: #fff;
+    margin-top: 50vh;
+    text-align: center;
+    font-size: 80px;
+    font-family: "Fleur De Leah", serif;
+    text-shadow: 3px 3px 3px black;
+   font-weight: 400;
+    font-style: normal;
+    padding-bottom: 20px;
+    
+  }
+  .home h3{
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    font-family:"Belleza", sans-serif;
+    text-shadow: 3px 3px 3px black;
+    font-weight: 400;
+    font-style: normal;
+    
+  }
+  .home span{
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+    font-family:"Belleza", sans-serif;
+    text-shadow: 3px 3px 3px black;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.date {
+ 
+  display: flex; /* Usamos flexbox para alinear los elementos */
+  margin-top: 30px; /* Espaciado superior */
+  padding-left: 40px; /* Espaciado izquierdo */
+  padding-right: 40px; /* Espaciado derecho */
+  padding-bottom: 20px;
+}
+
+.day, .month, .year  {  
+  flex: 1; /* Ocupa el mismo espacio */   
+  padding: 10px; /* Espaciado interno */
+  text-align: center; /* Centra el texto */
+  margin: 0 2px; /* Espacio entre los elementos */
+  justify-content: center;
+ 
+}
+
+.day, .year {
+
+  border-top: 3px solid white; /* Borde superior */
+  border-bottom: 3px solid white; /* Borde inferior */
+  box-shadow: 0 -4px 2px -2px rgba(0, 0, 0, 0.5), 0 4px 2px -2px rgba(0, 0, 0, 0.5); /* Sombra en los bordes superior e inferior */
+ 
+}
