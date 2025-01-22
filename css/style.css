@@ -10,6 +10,7 @@
 body {
     width: 100%;
     height: auto;
+    background: EFEFEF;
 }
 
 /* Seccion para navbar */
@@ -144,3 +145,93 @@ a:hover {
  
 }
 
+/* Sección de la fecha */
+
+/* ? ----- Cuenta Regresiva ----- */
+#cuenta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 100px;
+    background: #ccc;
+    height: 100vh;
+    padding-top: 30px;
+    align-items: center;
+    text-align: center;
+    
+   
+}
+#cuenta h2{
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+    font-family: "Belleza", serif;
+    font-size: 45px;
+    padding-bottom: 10px;
+  } 
+  .simply-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+   
+}
+.simply-section {
+	background: #1d8009;
+	width: 180px;
+	height: 180px;
+	margin: 0 20px;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.simply-amount {
+	display: block;
+	font-size: 50px;
+	font-weight: 700;
+    color: #fff;
+    font-family: "Fleur De Leah", serif;
+}
+
+.simply-word {
+	font-weight: 300;
+	font-size: 30px;
+    color: #fff;
+    font-family: "Belleza", serif;
+}
+
+
+/* ? ---------------------------- */
+
+/* .FechaBoda {
+    padding-top: 30px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background: #ccc;
+    height: 50vh;
+  }
+ .FechaBoda h2{
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+    font-family: "Belleza", serif;
+
+    font-size: 45px;
+    padding-bottom: 10px;
+  } 
+  
+  #FechaBoda{
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+  }
+  
+  .time {
+    margin: 0 10px;
+    padding: 20px;
+    background-color: #1b8f2a;
+    color: white;
+    border-radius: 10px;
+  } */
