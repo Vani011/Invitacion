@@ -1,6 +1,6 @@
 simplyCountdown('.simply-container', {
 	year: 2025, // required
-	month: 1, // required
+	month: 12, // required
 	day: 23, // required
 	hours: 7, // Default is 0 [0-23] integer
 	minutes: 31, // Default is 0 [0-59] integer
