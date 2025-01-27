@@ -237,20 +237,7 @@ a:hover {
 #cuenta h2 {
   font-size: 25px;
 }
-    .home h1 {
-        font-size: 40px;  
-        margin-top: 50vh;
 
-    }
-    
-
-    .home h3 {
-        font-size: 20px;
-    }
-
-    .home span {
-        font-size: 25px;
-    }
 
     .simply-container {
         flex-direction: row;
