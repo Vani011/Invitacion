@@ -226,9 +226,7 @@ a:hover {
     nav a {
         font-size: 12px;
     }
-.home{
-  height: 110vh;
-}
+
 .parallax h1, .parallax h3, .parallax .date {
     position: relative;
     z-index: 1; /* Asegúrate de que el contenido esté por encima del fondo */
