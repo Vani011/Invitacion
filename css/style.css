@@ -205,6 +205,12 @@ a:hover {
 
 /* ? ---------------------------- */
 
+
+.parallax {
+    overflow: hidden; /* Oculta el contenido que se desborda */
+}
+
+
 /* Media Queries para Responsividad */
 
 
@@ -221,14 +227,21 @@ a:hover {
         font-size: 12px;
     }
 .home{
-  height: 70vh;
+  height: 100vh;
+}
+.parallax h1, .parallax h3, .parallax .date {
+    position: relative;
+    z-index: 1; /* Asegúrate de que el contenido esté por encima del fondo */
+    text-align: center; /* Centra el texto */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+    
 }
 #cuenta h2 {
   font-size: 25px;
 }
     .home h1 {
         font-size: 40px;  
-        margin-top: 15vh;
+        margin-top: 50vh;
 
     }
     
