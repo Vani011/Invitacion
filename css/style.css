@@ -227,16 +227,16 @@ a:hover {
         font-size: 12px;
     }
 
-.parallax h1, .parallax h3, .parallax .date {
-    position: relative;
-    z-index: 1; /* Asegúrate de que el contenido esté por encima del fondo */
-    text-align: center; /* Centra el texto */
-    margin: 0 auto; /* Centra el contenido horizontalmente */
-    
-}
 #cuenta h2 {
   font-size: 25px;
 }
+    .home h1 {
+        font-size: 45px;  
+       
+
+    }
+    
+
 
 
     .simply-container {
