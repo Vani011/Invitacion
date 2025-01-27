@@ -122,21 +122,7 @@ a:hover {
     font-weight: 400;
     font-style: normal;
 }
-.parallax {
-    margin-top: 10vh;
-    position: relative;
-    width: 100%;
-    height: 100vh; /* Ajusta la altura según sea necesario */
-    overflow: hidden; /* Oculta el contenido que se desborda */
-}
 
-.parallax h1, .parallax h3, .parallax .date {
-    position: relative;
-    z-index: 1; /* Asegúrate de que el contenido esté por encima del fondo */
-    text-align: center; /* Centra el texto */
-    margin: 0 auto; /* Centra el contenido horizontalmente */
-    padding: 20px; /* Ajusta el relleno según sea necesario */
-}
 
 .date {
     display: flex; /* Usamos flexbox para alinear los elementos */
