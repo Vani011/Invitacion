@@ -449,7 +449,69 @@ a:hover {
   .novios-carousel .swiper-pagination-bullet {
     background: #fff;
   }
+/* Formulario de asistencia */
+.confirmacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+    max-width: 600px;
+}
 
+.confirmacion h2 {
+    color: #fff;
+    font-family: "Belleza", serif;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#confirmacion-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#confirmacion-form label {
+    color: #fff;
+    font-family: "Belleza", serif;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+#confirmacion-form input,
+#confirmacion-form select,
+#confirmacion-form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-family: "Belleza", serif;
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+}
+
+#confirmacion-form button {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background: #01a839cd;
+    color: #fff;
+    font-size: 1.2em;
+    font-family: "Belleza", serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#confirmacion-form button:hover {
+    background: #0056b3;
+}
+/* Media Queries para Responsividad */
 @media (max-width: 768px) {
     .frase-boda p {
         font-size: 1.5em;
@@ -540,11 +602,6 @@ a:hover {
         height: 100%;
       }
 }
-
-
-/* Media Queries para Responsividad */
-
-
 @media (max-width: 480px) {
     header {
         height: auto;
@@ -613,6 +670,24 @@ a:hover {
         font-size: 10px;
     }
   
-    
+    /* formulario */
+    .confirmacion {
+        padding: 30px 15px;
+        margin: 30px 15px;
+    }
+
+    .confirmacion h2 {
+        font-size: 2em;
+    }
+
+    #confirmacion-form input,
+    #confirmacion-form select,
+    #confirmacion-form textarea {
+        font-size: 0.9em;
+    }
+
+    #confirmacion-form button {
+        font-size: 1em;
+    }
 }
 

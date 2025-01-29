@@ -24,8 +24,8 @@
       <nav>
         <a href="#home">Inicio</a>
         <a href="#Ubicaciones">Ubicación</a>
-        <a href="#">Galeria</a>
-        <a href="#">Confrimación</a>
+        <a href="#Album">Galeria</a>
+        <a href="#Confirmacion">Confrimación</a>
       </nav>
     </header>
     <div class="home" id="home">
@@ -113,7 +113,7 @@
     </div>
     </div>
     <!-- Carrusel de fotos -->
-
+     <div id="Album">
     <div class="album-title" data-aos="fade-down">
       <h2>Álbum de Fotos</h2>
     </div>
@@ -130,6 +130,27 @@
       <!-- Agrega los puntos de paginación -->
       <div class="swiper-pagination"></div>
     </div>
+  </div>
+  <div id="Confirmacion">
+    <section class="confirmacion" data-aos="fade-down">
+      <h2>Confirmar Asistencia</h2>
+      <form id="confirmacion-form">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        
+        <label for="mensaje">Mensaje para los novios:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+        
+        <label for="asistencia">Asistirás:</label>
+        <select id="asistencia" name="asistencia" required>
+          <option value="si">Sí</option>
+          <option value="no">No</option>
+        </select>
+        
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </div>
   </main>
   <script src="js/script.js"></script>
   <script src="./js/simplyCountdown.min.js"></script>
