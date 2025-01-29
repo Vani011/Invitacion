@@ -10,7 +10,11 @@
 html, body {
   width: 100%;
   overflow-x: hidden; /* Evita el desbordamiento horizontal */
-  background: #a8a8a8; /* Asegúrate de que el color de fondo tenga el formato correcto */
+ background: linear-gradient(135deg, 
+  #e6d5b8 0%,
+  #d4c4a1 50%,
+  #c2b28c 100%
+); /* Asegúrate de que el color de fondo tenga el formato correcto */
 }
 
 body {
@@ -35,6 +39,7 @@ header {
     align-items: center;
     width: 50%;
     margin: 32px;
+    color: #fff;
 }
 
 .logo span {
@@ -47,9 +52,11 @@ header {
 
 nav {
     width: 50%;
-    margin: 32px;
+    margin: 0 32px;
     display: inline-flex;
     justify-content: space-around;
+    align-items: center;
+    height: 100%;
 }
 
 nav a {
@@ -57,10 +64,17 @@ nav a {
     text-decoration: none;
     font-size: 15px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    transition: all 0.3s ease;
 }
 
 a:hover {
-    color: #01a839cd;
+    background-color: #01a839cd;
+    color: #fff;
     font-weight: bold;
 }
 
@@ -152,7 +166,7 @@ a:hover {
 #cuenta {
     display: flex;
     flex-direction: column;
-    background: #ccc;
+    /* background: #ccc; */
     height: 40%;
     padding-top: 25px;
     align-items: center;
@@ -167,6 +181,8 @@ a:hover {
     padding-bottom: 10px;
 }
 
+
+
 .simply-container {
     display: flex;
     flex-direction: row;
@@ -176,7 +192,7 @@ a:hover {
 }
 
 .simply-section {
-    background: #1d8009;
+    background: #2e891bb0;
     width: 120px;
     height: 120px;
     margin: 0 15px;
@@ -209,8 +225,109 @@ a:hover {
 .parallax {
     overflow: hidden; /* Oculta el contenido que se desborda */
 }
+.frase-boda {
+    text-align: center;
+    padding: 40px 20px;
+    margin: 30px auto;
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.frase-boda p {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2em;
+    color: #4a4a4a;
+    line-height: 1.6;
+    margin: 0;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+/* tarjeta de padres */
+.padres {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.padres h2 {
+    font-size: 45px;
+    color: rgb(0, 0, 0);
+    font-family: "Belleza", serif;
+    margin-bottom: 40px;
+}
+
+.padres-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.padres-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.padres-img {
+    width: 100px;  /* Ancho fijo del contenedor */
+    height: 100px; /* Alto fijo del contenedor para hacerlo cuadrado */
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.padres-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.padres-card:hover {
+    transform: scale(1.05);
+}
+
+.padres-card h3 {
+    padding: 8px;
+    font-family: "Belleza", serif;
+    font-size: 2em;
+    color: #333;
+}
+
+.padres-nombres {
+    padding: 15px;
+    font-family: "Belleza", serif;
+}
+
+.padres-nombres p {
+    font-size: 1.2em;
+    color: #555;
+    margin: 10px 0;
+}
+
+.padres-nombres span {
+    display: block;
+    font-size: 1.5em;
+    color: #2e891bb0;
+    margin: 10px 0;
+}
 
 
+
+
+.Ubicaciones h2 {
+    text-align: center;
+    font-size: 45px;
+    color: rgb(0, 0, 0);
+    font-family: "Belleza", serif;
+    padding: 25px 0;
+}
 
 /* Contenedor de las tarjetas */
 .card-container {
@@ -295,6 +412,28 @@ a:hover {
 }
 
 @media (max-width: 768px) {
+    .frase-boda p {
+        font-size: 1.5em;
+    }
+    
+    .frase-boda {
+        padding: 20px 15px;
+        margin: 20px 15px;
+    }
+/* tarjeta de padres */
+.padres h2 {
+    font-size: 30px;
+}
+
+.padres-container {
+    gap: 20px;
+}
+
+.padres-card {
+    width: calc(50% - 20px);
+    min-width: 250px;
+}
+
     /* Tarjetas de ubicacion  */
     .card-container {
         flex-direction: column;
@@ -328,11 +467,22 @@ a:hover {
 
     nav.active {
         right: 0;
+        padding: 0;
     }
 
     nav a {
-        margin: 20px 0;
-        font-size: 18px;
+        width: 100%;
+        padding: 15px 20px;
+        justify-content: center;
+        height: auto;
+    }
+    a:hover {
+        background-color: #01a839cd;
+        color: #fff;
+        font-weight: bold;
+        width: 100%;
+        padding: 15px 20px;
+        height: auto;
     }
 
     .logo {
@@ -357,6 +507,7 @@ a:hover {
         font-size: 12px;
     }
 
+    
 #cuenta h2 {
   font-size: 25px;
 }
@@ -367,8 +518,31 @@ a:hover {
        
 
     }
+    /* tarjeta de padres */
+    .padres h2 {
+        font-size: 25px;
+    }
     
+    .padres-card {
+        width: 100%;
+    }
+    
+    .padres-img {
+        height: 180px;
+    }
+    
+    .padres-card h3 {
+        font-size: 1.5em;
+    }
+    
+    .padres-nombres p {
+        font-size: 1em;
+    }
 
+    
+    .Ubicaciones h2 {
+        font-size: 25px;
+    }
 
 
     .simply-container {
@@ -381,10 +555,13 @@ a:hover {
     }
 
     .simply-amount {
-        font-size: 10px;
+        font-size: 18px;
     }
 
     .simply-word {
-        font-size: 8px;
+        font-size: 10px;
     }
+  
+    
 }
+

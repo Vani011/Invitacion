@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <title>M&Y</title>
 </head>
 
@@ -39,24 +41,49 @@
       </section>
 
     </div>
-    <!-- <div class="Timer">
-            <section class="FechaBoda">
-              <h2>Faltan para el gran día:</h2>
-              <div id="FechaBoda">
-                  <div class="time" id="days"></div>
-                  <div class="time" id="hours"></div>
-                  <div class="time" id="minutes"></div>
-                  <div class="time" id="seconds"></div>
-              </div>
-          </section>
-          </div> -->
-    <div id="cuenta">
-      <h2>Faltan para el gran día:</h2>
-      <div class="simply-container">
-
+    <div class="frase-boda " data-aos="zoom-in">
+      <p class="animate__animated animate__bounce animate__delay-2s">Dos corazones, un mismo latido.<br>
+      Un amor, un destino.<br>
+      Acompáñanos a celebrar nuestra unión."</p>
+  </div>
+    <div id="cuenta" data-aos="fade-down">
+     
+      <h2 >Faltan para el gran día:</h2>
+      <div class="simply-container" >
       </div>
     </div>
-    <div class="Ubicaciones" id="Ubicaciones">
+    <div class="padres" data-aos="fade-down">
+      <h2>Con la bendición de nuestros padres</h2>
+      <div class="padres-container">
+        <!-- Tarjeta padres de la novia -->
+        <div class="padres-card">
+          <div class="padres-img">
+            <img src="./imagenes/novia.png" alt="Padres de la Novia">
+          </div>
+          <h3>Padres de la Novia</h3>
+          <div class="padres-nombres">
+            <p>Sr. Mario Antonio May Sulub</p>
+            <span>&</span>
+            <p>Sra. Carmen Chel Kuk</p>
+          </div>
+        </div>
+    
+        <!-- Tarjeta padres del novio -->
+        <div class="padres-card">
+          <div class="padres-img">
+            <img src="./imagenes/novio.png" alt="Padres del Novio">
+          </div>
+          <h3>Padres del Novio</h3>
+          <div class="padres-nombres">
+            <p>Sr. Yovani Edilberto Santos Camara</p>
+            <span>&</span>
+            <p>Sra. Ofelia Del Carmen Canul Ramirez</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="Ubicaciones" id="Ubicaciones " data-aos="fade-down">
+      <h2>Ubicaciones:</h2>
       <div class="card-container">
         <!-- Tarjeta Iglesia -->
         <div class="card">
@@ -90,8 +117,15 @@
   <script src="./js/simplyCountdown.min.js"></script>
   <script src="./js/countdown.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     const rellax = new Rellax('.rellax');   
+   
+  </script>
+  <script>
+    AOS.init({
+  duration: 1200,
+})
   </script>
 </body>
 
