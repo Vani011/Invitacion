@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <title>M&Y</title>
 </head>
 
@@ -42,7 +43,7 @@
 
     </div>
     <div class="frase-boda " data-aos="zoom-in">
-      <p class="animate__animated animate__bounce animate__delay-2s">Dos corazones, un mismo latido.<br>
+      <p class="animate__animated animate__bounce animate__delay-2s">"Dos corazones, un mismo latido.<br>
       Un amor, un destino.<br>
       Acompáñanos a celebrar nuestra unión."</p>
   </div>
@@ -111,21 +112,51 @@
         </div>
     </div>
     </div>
+    <!-- Carrusel de fotos -->
 
+    <div class="album-title" data-aos="fade-down">
+      <h2>Álbum de Fotos</h2>
+    </div>
+    <div class="swiper-container novios-carousel" data-aos="fade-down">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="./imagenes/home.jpg" alt="Foto 1"></div>
+        <div class="swiper-slide"><img src="./imagenes/iglesia.jpg" alt="Foto 2"></div>
+        <div class="swiper-slide"><img src="./imagenes/SalonFiesta.png" alt="Foto 3"></div>
+        <!-- Agrega más fotos según sea necesario -->
+      </div>
+      <!-- Agrega los botones de navegación -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <!-- Agrega los puntos de paginación -->
+      <div class="swiper-pagination"></div>
+    </div>
   </main>
   <script src="js/script.js"></script>
   <script src="./js/simplyCountdown.min.js"></script>
   <script src="./js/countdown.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script>
     const rellax = new Rellax('.rellax');   
-   
-  </script>
-  <script>
+  
     AOS.init({
   duration: 1200,
-})
+});
+var swiper = new Swiper('.novios-carousel', {
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    autoplay: {
+      delay: 5000,
+    },
+  });
   </script>
 </body>
 

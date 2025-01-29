@@ -411,6 +411,45 @@ a:hover {
     padding: 10px;
 }
 
+
+/* Carrusel  de fotos */
+
+.album-title {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .album-title h2 {
+    font-size: 2em;
+    color: #333;
+    font-family: "Belleza", sans-serif;
+  }
+.novios-carousel {
+    width: 100%;
+    max-width: 800px; /* Ajusta el ancho máximo del carrusel */
+    height: 400px; /* Ajusta la altura del carrusel */
+    margin: 50px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .novios-carousel .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .novios-carousel .swiper-button-next,
+  .novios-carousel .swiper-button-prev {
+    color: #fff;
+  }
+  
+  .novios-carousel .swiper-pagination-bullet {
+    background: #fff;
+  }
+
 @media (max-width: 768px) {
     .frase-boda p {
         font-size: 1.5em;
@@ -488,6 +527,18 @@ a:hover {
     .logo {
         width: 70%;
     }
+
+    /* carrusel de fotos */
+    .album-title h2 {
+        font-size: 1.5em;
+      }
+    .novios-carousel {
+        height: 300px; /* Ajusta la altura del carrusel para dispositivos móviles */
+      }
+    
+      .novios-carousel .swiper-slide img {
+        height: 100%;
+      }
 }
 
 
