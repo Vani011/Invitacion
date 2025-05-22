@@ -1,0 +1,117 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+ 
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-image: url('../imagenes/prueba.jpg');
+    color: #003344;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  /* Fade effects */
+  body.fade-in {
+    animation: fadeIn 0.6s ease forwards;
+  }
+  
+  body.fade-out {
+    opacity: 0;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    /* Agregar estas propiedades */
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+  
+  .name {
+    color: #007b8a;
+    font-size: 2.5em;
+    margin: 10px 0;
+  }
+  
+  .ampersand {
+    color: #001f4d;
+    font-size: 2em;
+    margin: 10px 0;
+  }
+  
+  button {
+    background-color: #2fc2cf;
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-top: 30px;
+    transition: background 0.3s;
+    width: 100%;
+    max-width: 250px;
+  }
+  
+  button:hover {
+    background-color: #25aab5;
+  }
+  
+  .invitation-content {
+    background-color: #e6f7f8;
+    padding: 20px;
+    border-radius: 12px;
+    margin: 0 auto;
+    max-width: 500px;
+    text-align: left;
+  }
+  
+  /* Responsive */
+  @media screen and (max-width: 768px) {
+    body {
+      background-position: top center;
+      background-size: auto 100%;
+  }
+}
+  @media (max-width: 480px) {
+    .name {
+      font-size: 2em;
+    }
+  
+    .ampersand {
+      font-size: 1.6em;
+    }
+  
+    button {
+      font-size: 0.95em;
+      padding: 12px;
+    }
+  
+    .invitation-content {
+      padding: 15px;
+    }
+  
+    .invitation-content h2 {
+      font-size: 1.3em;
+    }
+  }
+  

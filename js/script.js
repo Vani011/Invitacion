@@ -24,26 +24,37 @@
 //         document.getElementById("FechaBoda").innerHTML = "¡El gran día ha llegado!";
 //     }
 // }, 1000);
- // Fecha de la boda
+// Fecha de la boda
 
 // Funcionamiento del boton de hamburguesa
 
-const hamburger = document.getElementById('hamburger');
-const nav = document.querySelector('nav');
+const hamburger = document.getElementById("hamburger");
+const nav = document.querySelector("nav");
 
-hamburger.addEventListener('click', () => {
-    nav.classList.toggle('active');
-    hamburger.innerHTML = nav.classList.contains('active') 
-        ? '<i class="fas fa-times"></i>' 
-        : '<i class="fas fa-bars"></i>';
+hamburger.addEventListener("click", () => {
+  nav.classList.toggle("active");
+  hamburger.innerHTML = nav.classList.contains("active")
+    ? '<i class="fas fa-times"></i>'
+    : '<i class="fas fa-bars"></i>';
 });
 
 // Cerrar menú al hacer click en un enlace
-document.querySelectorAll('nav a').forEach(link => {
-    link.addEventListener('click', () => {
-        nav.classList.remove('active');
-        hamburger.innerHTML = '<i class="fas fa-bars"></i>';
-    });
+document.querySelectorAll("nav a").forEach((link) => {
+  link.addEventListener("click", () => {
+    nav.classList.remove("active");
+    hamburger.innerHTML = '<i class="fas fa-bars"></i>';
+  });
 });
+// Funcionamiento del boton de la musica
+const musicButton = document.getElementById("musicButton");
+const bgMusic = document.getElementById("bgMusic");
+let isPlaying = false;
 
-
+musicButton.addEventListener("click", () => {
+  if (isPlaying) {
+    bgMusic.pause();
+  } else {
+    bgMusic.play();
+  }
+  isPlaying = !isPlaying;
+});

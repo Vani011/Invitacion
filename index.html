@@ -1,184 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-  <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-  <title>M&Y</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invitación</title>
+    <link rel="stylesheet" href="./css/styleOpen.css" />
 </head>
 
-<body>
-  <main>
-    <header>
-      <div class="logo">
-        <span>M &#10084 Y</span>
-      </div>
-      <button class="hamburger" id="hamburger">
-        <i class="fas fa-bars"></i>
-      </button>
-      <nav>
-        <a href="#home">Inicio</a>
-        <a href="#Ubicaciones">Ubicación</a>
-        <a href="#Album">Galeria</a>
-        <a href="#Confirmacion">Confrimación</a>
-      </nav>
-    </header>
-    <div class="home" id="home">
-      <section class=" parallax rellax" data-rellax-speed="-2" data-rellax-xs-speed="-4"
-      data-rellax-mobile-speed="-3">
-        <h1>Melissa & Yovani</h1>
-        <h3>Dia del la Boda</h3>
-        <div class="date">
-          <span class="day">20</span>
-          <span class="month">Dic</span>
-          <span class="year">2025</span>
-        </div>
+<body class="fade-in">
+    <div class="container">
+        <h1 class="name">Yovani</h1>
+        <h2 class="ampersand">&</h2>
+        <h1 class="name">Melissa</h1>
+        <button id="openButton">ABRIR INVITACIÓN</button>
+    </div>
 
-      </section>
-
-    </div>
-    <div class="frase-boda " data-aos="zoom-in">
-      <p class="animate__animated animate__bounce animate__delay-2s">"Dos corazones, un mismo latido.<br>
-      Un amor, un destino.<br>
-      Acompáñanos a celebrar nuestra unión."</p>
-  </div>
-    <div id="cuenta" data-aos="fade-down">
-     
-      <h2 >Faltan para el gran día:</h2>
-      <div class="simply-container" >
-      </div>
-    </div>
-    <div class="padres" data-aos="fade-down">
-      <h2>Con la bendición de nuestros padres</h2>
-      <div class="padres-container">
-        <!-- Tarjeta padres de la novia -->
-        <div class="padres-card">
-          <div class="padres-img">
-            <img src="./imagenes/novia.png" alt="Padres de la Novia">
-          </div>
-          <h3>Padres de la Novia</h3>
-          <div class="padres-nombres">
-            <p>Sr. Mario Antonio May Sulub</p>
-            <span>&</span>
-            <p>Sra. Carmen Chel Kuk</p>
-          </div>
-        </div>
-    
-        <!-- Tarjeta padres del novio -->
-        <div class="padres-card">
-          <div class="padres-img">
-            <img src="./imagenes/novio.png" alt="Padres del Novio">
-          </div>
-          <h3>Padres del Novio</h3>
-          <div class="padres-nombres">
-            <p>Sr. Yovani Edilberto Santos Camara</p>
-            <span>&</span>
-            <p>Sra. Ofelia Del Carmen Canul Ramirez</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="Ubicaciones" id="Ubicaciones " data-aos="fade-down">
-      <h2>Ubicaciones:</h2>
-      <div class="card-container">
-        <!-- Tarjeta Iglesia -->
-        <div class="card">
-            <img src="./imagenes/iglesia.jpg" alt="Iglesia">
-            <div class="card-content">
-                <h3>Ceremonia</h3>
-                <p>Lugar: Iglesia de San Antonio de Padua</p>
-                <p>Hora: 6:00 PM</p>
-                <p>Direción: C. 51 1351, Centro, 97880 Oxkutzcab, Yuc.</p>
-                <a href="https://maps.app.goo.gl/MUtm2KcjEcr9a2K58" target="_blank" class="btn">
-                  <i class="fa-solid fa-map-location-dot fa-xl"></i>Como llegar</a>
-          </div>
-        </div>
-        <!-- Tarjeta Fiesta -->
-        <div class="card">
-            <img src="./imagenes/SalonFiesta.png" alt="Fiesta">
-            <div class="card-content">
-                <h3>Evento</h3>
-                <p>Lugar: Salón de Eventos Sol y Luna</p>
-                <p>Hora: 9:00 PM</p>
-                <p>Direción: C. 64 64, Juan José Pacho, 97880 Oxkutzcab, Yuc.</p>
-                <a href="https://maps.app.goo.gl/NvdNsBAoiTASzTgP9" target="_blank" class="btn">
-                  <i class="fa-solid fa-map-location-dot fa-xl"></i>Como llegar</a>
-            </div>
-        </div>
-    </div>
-    </div>
-    <!-- Carrusel de fotos -->
-     <div id="Album">
-    <div class="album-title" data-aos="fade-down">
-      <h2>Álbum de Fotos</h2>
-    </div>
-    <div class="swiper-container novios-carousel" data-aos="fade-down">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="./imagenes/home.jpg" alt="Foto 1"></div>
-        <div class="swiper-slide"><img src="./imagenes/iglesia.jpg" alt="Foto 2"></div>
-        <div class="swiper-slide"><img src="./imagenes/SalonFiesta.png" alt="Foto 3"></div>
-        <!-- Agrega más fotos según sea necesario -->
-      </div>
-      <!-- Agrega los botones de navegación -->
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-      <!-- Agrega los puntos de paginación -->
-      <div class="swiper-pagination"></div>
-    </div>
-  </div>
-  <div id="Confirmacion">
-    <section class="confirmacion" data-aos="fade-down">
-      <h2>Confirmar Asistencia</h2>
-      <form id="confirmacion-form">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
-        
-        <label for="mensaje">Mensaje para los novios:</label>
-        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-        
-        <label for="asistencia">Asistirás:</label>
-        <select id="asistencia" name="asistencia" required>
-          <option value="si">Sí</option>
-          <option value="no">No</option>
-        </select>
-        
-        <button type="submit">Enviar</button>
-      </form>
-    </section>
-  </div>
-  </main>
-  <script src="js/script.js"></script>
-  <script src="./js/simplyCountdown.min.js"></script>
-  <script src="./js/countdown.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script>
-    const rellax = new Rellax('.rellax');   
-  
-    AOS.init({
-  duration: 1200,
-});
-var swiper = new Swiper('.novios-carousel', {
-    loop: true,
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    autoplay: {
-      delay: 5000,
-    },
-  });
-  </script>
+    <script src="./js/scriptOpen.js"></script>
 </body>
 
 </html>
