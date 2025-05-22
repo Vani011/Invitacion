@@ -46,15 +46,41 @@ document.querySelectorAll("nav a").forEach((link) => {
   });
 });
 // Funcionamiento del boton de la musica
+// Reemplaza el código actual del botón de música por este
 const musicButton = document.getElementById("musicButton");
 const bgMusic = document.getElementById("bgMusic");
+const playIcon = document.getElementById("playIcon");
+const pauseIcon = document.getElementById("pauseIcon");
 let isPlaying = false;
 
+// Función para iniciar la música automáticamente
+window.addEventListener("DOMContentLoaded", () => {
+  // Intenta reproducir la música
+  const playPromise = bgMusic.play();
+
+  if (playPromise !== undefined) {
+    playPromise
+      .then(() => {
+        isPlaying = true;
+        playIcon.style.display = "none";
+        pauseIcon.style.display = "block";
+      })
+      .catch((error) => {
+        console.log("Reproducción automática bloqueada por el navegador");
+      });
+  }
+});
+
+// Control del botón de música
 musicButton.addEventListener("click", () => {
   if (isPlaying) {
     bgMusic.pause();
+    playIcon.style.display = "block";
+    pauseIcon.style.display = "none";
   } else {
     bgMusic.play();
+    playIcon.style.display = "none";
+    pauseIcon.style.display = "block";
   }
   isPlaying = !isPlaying;
 });
